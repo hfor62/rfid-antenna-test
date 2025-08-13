@@ -1,65 +1,65 @@
-# 🐾 Smart RFID Cat Door – Open Source Project
+# 🐾 Catdoor Project Overview - Smart RFID Cat Access System
 
-Welcome to the **RFID Cat Door Project**, an open-source initiative to build a smart, pet-safe, and customizable cat entrance using:
-
-- 📡 RFID tag detection (FDX-B animal chips)
-- 🤖 ESP32 microcontroller
-- 🔐 Servo-controlled lock
-- ☁️ Cloud integration via Firebase
-- 🧩 Fully 3D-printed, modular design
-
-This project is built for **DIY enthusiasts** who want to give their cat (or dog!) controlled freedom, with powerful data logging and customization options.
+Welcome to the **Open Source RFID Catdoor Project**!  
+This project helps you build a complete RFID-controlled cat door with cloud logging, user access control, and DIY 3D-printed parts.
 
 ---
 
-## 📚 Start Here – Project Modules
+## ✨ Project Highlights
 
-### 1. 🧪 [RFID Reader Test](./README.md)
-Get your RFID reader working with your ESP32 or Arduino board.
-> Basic hex-dump and validation of raw RFID data – minimal code, maximal compatibility.
-
-### 2. 🌀 [Print and Wind the Coil Antenna](./ANTENNA.md)
-Learn how to use the **included flat antenna** or build your **own 3D-printed coil**.
-> Use 35 windings, and your cat will never go undetected.
-
-### 3. ☁️ Cloud Connection (coming soon)
-Setup your RFID cat door to connect to our **Firebase-based cloud platform**, with:
-- Live logging
-- Cat entry tracking
-- Web dashboard & mobile notifications *(planned)*
+- ✅ Fully Open Source (hardware + software)
+- ✅ Works with animal FDX-B RFID tags (like vet chips)
+- ✅ Uses ESP32 microcontroller (others possible)
+- ✅ Optional OLED display and servo lock
+- ✅ Sends tag events to Firebase Cloud
+- ✅ Modular, step-by-step learning for DIY makers
 
 ---
 
-## 🌍 Why This Project?
+## 🔄 How to Get Started
 
-This cat door is designed to be:
+Explore the sections below to get up and running!
 
-- ✅ **Safe** – unlocked only for registered tags
-- 🌱 **Eco-friendly** – no batteries, powered via USB or solar panel
-- 🛠️ **Modular** – build only the parts you need
-- 🌐 **Connected** – optional integration with cloud services
+### 1. ✨ [Get your RFID and controller up and running](./RFID_Test.ino)
+A minimal test sketch for checking your RFID reader, using a pre-built antenna and raw serial output.
 
----
+### 2. ⚙️ [Print, Wind and Test your Catdoor Coil-Antenna](./ANTENNA.md)
+How to 3D print the antenna base and wind a functional cat-sized antenna coil.
 
-## 🔄 Coming Soon
-
-- 📺 OLED display integration
-- 🐈 Tag-based entry restrictions (by time or cat)
-- 🔄 Servo lock mechanics
-- 💾 Local + remote history logs
-- 📱 Mobile-friendly control panel
+### 3. ☁️ [Connect your RFID to Firebase Cloud](./README.md)
+Once your reader works, learn how to send events to a cloud backend using your unique device token.
 
 ---
 
-## 🤝 Contribute & Stay Updated
+## 🌍 Documentation & Files
 
-This project is still growing. You can:
-
-- ⭐ Star this repo on [GitHub](https://github.com/hfor62/rfid-antenna-test)
-- 🧠 Submit ideas and improvements
-- 📷 Share your printed builds!
+- **[RFID_Test.ino](./RFID_Test.ino)** — Minimal sketch to test tag reading  
+- **[hardware_config.h](./hardware_config.h)** — Pin and baud rate settings  
+- **[ANTENNA.md](./ANTENNA.md)** — Guide for winding custom antenna  
+- **[README.md](./README.md)** — Main documentation with examples and links
 
 ---
 
-> Made with 🧡 in Sweden – by [hfor62](https://github.com/hfor62)
+## 🎉 Coming Soon
 
+- 🕹️ Servo locking code  
+- 🗃️ Cloud configuration guide  
+- 🎨 3D files for complete catdoor  
+- 🎥 Assembly video + walkthrough  
+- 📲 Optional mobile interface
+
+Stay tuned!
+
+---
+
+## 🚀 Want to Join or Test?
+
+We will soon invite testers to try the cloud-connected version of the cat door. You can:
+
+- Build from scratch using your own hardware  
+- Use just the antenna and RFID parts  
+- Or follow step-by-step from the beginning
+
+---
+
+Made with ❤️ by [@hfor62](https://github.com/hfor62)
